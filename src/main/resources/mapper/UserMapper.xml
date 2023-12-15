@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mapper.UserMapper">
 
-    <insert id="insertUser">
-        INSERT INTO users (name, email) VALUES (#{name}, #{email})
-    </insert>
+<!--    <insert id="insertUser">-->
+<!--        INSERT INTO Member (name, email) VALUES (#{name}, #{email})-->
+<!--    </insert>-->
 
-    <select id="selectUserById" resultType="com.example.model.User">
-        SELECT * FROM users WHERE id = #{id}
+    <select id="selectUserById" resultType="com.master.Project">
+--         SELECT * FROM Member WHERE id = #{id}
     </select>
 
-    <select id="selectAllUsers" resultType="com.example.model.User">
-        SELECT * FROM users
-    </select>
+<!--    <select id="selectAllUsers" resultType="com.example.model.User">-->
+<!--        SELECT * FROM users-->
+<!--    </select>-->
 
-    <update id="updateUser">
-        UPDATE users SET name = #{name}, email = #{email} WHERE id = #{id}
-    </update>
+<!--    <update id="updateUser">-->
+<!--        UPDATE users SET name = #{name}, email = #{email} WHERE id = #{id}-->
+<!--    </update>-->
 
-    <delete id="deleteUser">
-        DELETE FROM users WHERE id = #{id}
-    </delete>
+<!--    <delete id="deleteUser">-->
+<!--        DELETE FROM users WHERE id = #{id}-->
+<!--    </delete>-->
 
 </mapper>

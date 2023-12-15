@@ -18,6 +18,6 @@ public class MemberServiceTest {
         //then
         System.out.println(member);
         System.out.println(findMember);
-//        Assertions.assertThat(member).isEqualTo(findMember);
+        Assertions.assertThat(member).isEqualTo(findMember);
     }
 }
